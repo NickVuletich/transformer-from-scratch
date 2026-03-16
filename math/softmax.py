@@ -22,7 +22,7 @@ def softmax(x):
     - The outputs sum to 1
     """
 
-    x = x - np.map(x, axis=-1, keepdims=True)
+    x = x - np.max(x, axis=-1, keepdims=True)
 
     exp_x = np.exp(x)
 
