@@ -27,15 +27,3 @@ def softmax(x):
     exp_x = np.exp(x)
 
     return exp_x / np.sum(exp_x, axis=-1, keepdims=True)
-
-#----------TESTS----------
-
-if __name__ == "__main__":
-
-    x = np.array([1.0, 2.0, 3.0])
-
-    probs = softmax(x)
-
-    print(f"Input: {x}")
-    print(f"Softmax: {probs}")
-    print(f"Sum: {np.sum(probs)}")

@@ -44,21 +44,4 @@ def self_attention(X, Wq, Wk, Wv):
 
     return output
 
-#----------TESTS----------
-
-if __name__ == "__main__":
-
-    tokens = 4
-    embed_dim = 8
-
-    X = np.random.randn(tokens, embed_dim)
-
-    Wq = np.random.randn(embed_dim, embed_dim)
-    Wk = np.random.randn(embed_dim, embed_dim)
-    Wv = np.random.randn(embed_dim, embed_dim)
-
-    output = self_attention(X, Wq, Wk, Wv)
-
-    print(f"Input shape: {X.shape}")
-    print(f"Output shape: {output.shape}")
 

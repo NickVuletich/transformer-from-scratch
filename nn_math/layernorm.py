@@ -35,18 +35,3 @@ def layer_norm(x, gamma, beta, esp=1e-5):
     x_norm = (x - mean) / np.sqrt(var + esp)
 
     return gamma * x_norm + beta
-
-if __name__ == "__main__":
-
-    tokens = 6
-    embed_dim = 8
-
-    x = np.random.randn(tokens, embed_dim)
-
-    gamma = np.ones(embed_dim)
-    beta = np.ones(embed_dim)
-
-    y = layer_norm(x, gamma, beta)
-
-    print(f"Input shape: {x.shape}")
-    print(f"Output shape: {y.shape}")
