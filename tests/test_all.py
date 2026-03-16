@@ -7,6 +7,8 @@ from tests.test_linear import test_linear
 from tests.test_softmax import test_softmax
 from tests.test_self_attention import test_self_attention
 from tests.test_layernorm import test_layer_norm
+from tests.test_transformer_block_postnorm import test_transformer_block_postnorm
+from tests.test_transformer_block_prenorm import test_transformer_block_prenorm
 
 if __name__ == "__main__":
     print("Testing activation functions...")
@@ -35,4 +37,12 @@ if __name__ == "__main__":
     test_layer_norm()
     print()
 
-    print("Completed all tests sucessfully!!!")
+    print("Testing transformer block postnorm function...")
+    test_transformer_block_postnorm()
+    print()
+
+    print("Testing transformer block prenorm function...")
+    test_transformer_block_prenorm()
+    print()
+
+    print("Completed all tests successfully!!!")
