@@ -42,6 +42,6 @@ def self_attention(X, Wq, Wk, Wv):
 
     output = weights @ V # (tokens, d_k)
 
-    return output
+    return output, weights
 
 

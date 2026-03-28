@@ -48,7 +48,7 @@ gamma2 = np.ones(embed_dim)
 beta2 = np.zeros(embed_dim)
 
 #----------transformer----------
-output = transformer_block_prenorm(X, Wq, Wk, Wv, W1, b1, W2, b2, gamma1, beta1, gamma2, beta2)
+output, weights = transformer_block_prenorm(X, Wq, Wk, Wv, W1, b1, W2, b2, gamma1, beta1, gamma2, beta2)
 
 #----------Printing----------
 print("Sentence: ", sentence)
@@ -58,3 +58,6 @@ print("Output Shape", output.shape)
 print()
 print("Output Vectors (first 2 tokens): ")
 print(output[:2])
+print()
+print("Attention Matrix:")
+print(weights)

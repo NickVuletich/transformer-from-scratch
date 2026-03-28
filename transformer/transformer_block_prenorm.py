@@ -22,11 +22,11 @@ def transformer_block_prenorm(
     """
 
     norm1 = layer_norm(X, gamma1, beta1)
-    attention = self_attention(norm1, Wq, Wk, Wv)
+    attention, weights = self_attention(norm1, Wq, Wk, Wv)
     Z1 = X + attention
 
     norm2 = layer_norm(Z1, gamma2, beta2)
     mlp_output = mlp(norm2, W1, b1, W2, b2)
     Z2 = Z1 + mlp_output
 
-    return Z2
+    return Z2, weights
