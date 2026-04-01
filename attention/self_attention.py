@@ -4,7 +4,7 @@
 import numpy as np
 from nn_math.softmax import softmax
 
-def self_attention(X, Wq, Wk, Wv):
+def self_attention(X, Wq, Wk, Wv, mask=None):
 
     """
     Self Attention
@@ -37,6 +37,9 @@ def self_attention(X, Wq, Wk, Wv):
     d_k = K.shape[-1]
 
     scores = (Q @ K.T) / np.sqrt(d_k) # (tokens, tokens)
+
+    if mask is not None:
+        scores = scores + mask
 
     weights = softmax(scores) # (tokens, tokens)
 
