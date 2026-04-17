@@ -11,14 +11,16 @@ def multi_head_attention(X, Wq, Wk, Wv, mask=None):
     V = X @ Wv
 
     d_k = K.shape[-1]
-
     scores = (Q @ K.T) / np.sqrt(d_k)
 
-    if mask is not None:
-        scores = scores + mask
+    seq_len = X.shape[0]
+
+    if mask is None:
+        mask = np.triu(np.ones((seq_len, seq_len)), k=1) * -1e9
+
+    scores = scores + mask
     
     weights = softmax(scores)
-
     output = weights @ V
 
     return output, weights

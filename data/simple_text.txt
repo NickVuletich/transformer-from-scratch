@@ -1,0 +1,5 @@
+the cat sat on the mat
+the dog sat on the rug
+the cat lay on the bed
+the dog ran in the yard
+the cat ran in the house

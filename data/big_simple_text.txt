@@ -1,0 +1,56 @@
+the cat sat on the mat
+the dog sat on the rug
+the cat lay on the bed
+the dog ran in the yard
+the cat ran in the house
+the dog slept on the couch
+the bird sat on the tree
+the cat jumped on the table
+the dog jumped in the car
+the cat walked in the room
+the dog walked in the park
+the cat slept in the sun
+the dog barked at the cat
+the cat looked at the dog
+the dog chased the cat
+the cat chased the mouse
+the mouse ran in the hole
+the bird flew in the sky
+the dog ran across the field
+the cat climbed the tree
+
+the red cat sat on the mat
+the big dog sat on the rug
+the small cat slept on the bed
+the happy dog ran in the yard
+the black cat ran in the house
+the loud dog barked at the cat
+the quiet cat looked at the dog
+the fast dog chased the cat
+the slow cat chased the mouse
+the small mouse ran in the hole
+the blue bird flew in the sky
+the brown dog ran across the field
+the white cat climbed the tree
+
+the cat sat on the mat again
+the dog sat on the rug again
+the cat ran in the house again
+the dog ran in the yard again
+the cat jumped on the table again
+the dog jumped in the car again
+the cat slept on the bed again
+the dog slept on the couch again
+the bird sat on the tree again
+the mouse ran in the hole again
+
+the cat sat on the mat
+the cat sat on the mat
+the cat sat on the mat
+the dog sat on the rug
+the dog sat on the rug
+the dog sat on the rug
+the cat ran in the house
+the cat ran in the house
+the dog ran in the yard
+the dog ran in the yard
